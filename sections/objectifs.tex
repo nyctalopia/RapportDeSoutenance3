@@ -1,0 +1,85 @@
+\section{Objectifs pour la dernière soutenance}
+\noindent Voici la répartition prévue des tâches entre les étudiants du groupe gameHUB pour la dernière soutenance.
+
+\subsection{Sauvegardes}
+\setlength{\parindent}{5ex}
+Concernant les sauvegardes, nous avons décidé de placer des bornes de sauvegarde, représentées par une ancienne radio, qui serons placées à des endroit stratégique du jeu. Cette mécanique permet de simplifier le système de sauvegarde car ne demande pas de connaître l’emplacement du joueur et rendra le jeu plus stressant, car empêche le joueur de sauvegarder sa progression à tout instant.
+\begin{figure}[H]
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \centerline{\includegraphics[width=1.5\linewidth]{img/assets/save.png}}
+  \captionof{figure}{\emph{Borne de sauvegarde}}
+  \label{fig:save}
+\end{minipage}%
+\end{figure}
+
+
+Concernant les contrôles enjeu, nous devrons aussi implémenter une touche d’action pour interagir avec les objets du jeu, tel que des portes, des bornes de sauvegarde ou des objets en notre possessions nécessaire à l’avancée du jeu. Ceci nous demandera aussi de définir la portée d’action du personnage.
+L'ajout de l'apparition du menu lors de l'appui sur la touche ``escape'' doit aussi être implémenté.
+\newline
+
+\vfill
+\noindent\makebox[\linewidth]{\rule{.8\paperwidth}{.6pt}}\\[0.2cm]
+EPITA Toulouse - Projet S2 - 2022 \hfill Nyctalopia - gameHUB
+\noindent\makebox[\linewidth]{\rule{.8\paperwidth}{.6pt}}
+
+\newpage
+
+Le script, servant à redéfinir les touches de contrôles, n’est pas encore terminé, certains cas ne sont pas pris en compte, notamment le fait de d’empêcher le joueur d’assigner la même touche à plusieurs actions. Nous allons aussi devoir, par la suite, adapter ce script pour l’ajouter au menu en jeu. Le script peut déjà être adapté pour la touche « utiliser », qui seras implémentée plus tard.
+Une sauvegarde des touches redéfinies doit aussi être implémentée.
+
+\subsection{Gameplay}
+
+Concernant le gameplay, nous avons déjà commencé à réfléchir à certaines énigmes telles que la récupération de fusibles pour ouvrir des portes débloquant ainsi la suite de l’histoire.
+\newline
+
+\begin{figure}[H]
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \centerline{\includegraphics[width=1.5\linewidth]{img/assets/fusibles.png}}
+  \captionof{figure}{\emph{Boîte à fusibles}}
+  \label{fig:fusebox}
+\end{minipage}%
+\end{figure}
+
+\subsection{Carte - Jouabilité}
+
+Nous envisageons pour la dernière soutenance de finir les chapitres 1,2 et le troisième se déroulant dans les égouts en implémentant une partie jouable.
+
+
+
+
+\vfill
+\noindent\makebox[\linewidth]{\rule{.8\paperwidth}{.6pt}}\\[0.2cm]
+EPITA Toulouse - Projet S2 - 2022 \hfill Nyctalopia - gameHUB
+\noindent\makebox[\linewidth]{\rule{.8\paperwidth}{.6pt}}
+
+\newpage
+
+\begin{figure}[H]
+\centering
+\begin{minipage}{.7\textwidth}
+  \centering
+  \centerline{\includegraphics[width=.5\linewidth]{img/assets/egouts3.png}}
+  \captionof{figure}{\emph{Aperçu des égouts}}
+  \label{fig:egouts3}
+\end{minipage}%
+\end{figure}
+
+\subsection{Multijoueur}
+Pour la troisième soutenance, nous espérons avoir terminé le multijoueur. Voici la liste de tâches à réaliser :
+\begin{itemize}
+    \item Corriger un certain nombre de bogues notamment liés à la synchronisation des clients (scènes qui se déclenchaient trop tard, évènements asynchrones, ...)
+    \item Implémenter l'apparition automatique des personnages selon le nombre de joueurs.
+\end{itemize}
+
+
+
+\vfill
+\noindent\makebox[\linewidth]{\rule{.8\paperwidth}{.6pt}}\\[0.2cm]
+EPITA Toulouse - Projet S2 - 2022 \hfill Nyctalopia - gameHUB
+\noindent\makebox[\linewidth]{\rule{.8\paperwidth}{.6pt}}
+
+\newpage

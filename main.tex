@@ -1,0 +1,99 @@
+%% Page de garde %%
+\documentclass[a4paper, 12pt]{article}
+
+\title{Rapport de Projet}
+\author{Hugo Meleiro}
+
+\usepackage[french]{babel}
+\usepackage{csquotes}
+\usepackage{lipsum}
+\usepackage{setspace}
+\usepackage[hidelinks]{hyperref}
+\usepackage[nottoc]{tocbibind}
+\setlength{\emergencystretch}{2em}
+
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{ulem}
+\normalem
+
+\usepackage[margin=25mm]{geometry} 
+\usepackage{graphicx}
+\usepackage{pdfpages} 
+\usepackage{afterpage}
+\newcommand\myemptypage{
+    \null
+    \thispagestyle{empty}
+    \addtocounter{page}{-1}
+    \newpage
+}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
+
+
+\usepackage{pgfplots} 
+\pgfplotsset{width=7cm, compat=newest}
+\usetikzlibrary{patterns}
+\usepackage{bchart}
+\renewcommand{\bcfontstyle}{}
+\usepackage{pgf-pie}
+\usepackage{float}
+\usepackage{xcolor}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.68,0,0.12}
+\definecolor{backcolour}{rgb}{0.96,0.96,0.96}
+
+\usepackage{listings}
+\lstloadlanguages{csh}
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegray},
+    keywordstyle=\color{codepurple},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codegreen},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2,
+    literate={á}{{\'a}}1 {ã}{{\~a}}1 {é}{{\'e}}1 
+}
+
+\lstset{style=mystyle}
+
+%% DEBUT %%
+\usepackage[T1]{fontenc}
+\begin{document}
+
+\pagenumbering{roman}
+
+\include{title}
+
+\setlength{\parskip}{.5em}
+\cleardoublepage
+\tableofcontents
+\setlength{\parskip}{1em} 
+\newpage
+
+\pagenumbering{arabic}
+
+%% SECTIONS %%
+\include{sections/introduction}
+\include{sections/répartition}
+\include{sections/progres}
+\include{sections/avancement}
+\include{sections/difficultés}
+\include{sections/conclusion}
+\include{sections/annexe}
+
+
+%% FIN %%
+\end{document}
